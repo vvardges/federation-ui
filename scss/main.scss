@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+$enable-rounded: false;
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  "secondary": #eaecf2
+);
+
+$spacer: 1.5rem;
+
+$border-color: #000;
+
+$gray-900: #292929;
+
+$font-family-base: 'PT Serif', serif;
+$headings-font-family: 'Roboto', sans-serif;
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.125;
+$headings-font-weight: bold;
+$lead-font-size: $font-size-base * 1.125;
+$small-font-size: $font-size-base * 0.88;
+
+$card-border-width: 0;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1268px
+) !default;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.font-family-condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.letter-spacing-lg {
+  letter-spacing: 0.25em;
+}
+
+.border-md {
+  border-width: 3px !important;
+}
