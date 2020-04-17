@@ -5,7 +5,8 @@ $enable-rounded: false;
 $enable-responsive-font-sizes: true;
 
 $theme-colors: (
-  "secondary": #eaecf2
+  "secondary": #eaecf2,
+       "info": #99A8C5,
 );
 
 $spacer: 1.5rem;
@@ -23,9 +24,11 @@ $h3-font-size: $font-size-base * 2;
 $h5-font-size: $font-size-base * 1.125;
 $headings-font-weight: bold;
 $lead-font-size: $font-size-base * 1.125;
-$small-font-size: $font-size-base * 0.88;
+$small-font-size: 14px;
 
 $card-border-width: 0;
+
+$navbar-padding-y: 7px;
 
 $container-max-widths: (
         sm: 540px,
@@ -34,7 +37,14 @@ $container-max-widths: (
         xl: 1268px
 ) !default;
 
+$list-group-item-padding-x: 0;
+$list-group-border-color: rgba(41, 41, 41, 0.36);
+
+$hr-border-color: $gray-900;
+$hr-border-width: 4px;
+
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
 
 .font-family-condensed {
   font-family: 'Roboto Condensed', sans-serif;
@@ -46,4 +56,8 @@ $container-max-widths: (
 
 .border-md {
   border-width: 3px !important;
+}
+
+.smallest {
+  font-size: 10px;
 }

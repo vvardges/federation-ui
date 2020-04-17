@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/vvardges/federation-ui#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
