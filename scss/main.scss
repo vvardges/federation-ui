@@ -13,6 +13,7 @@ $spacer: 1.5rem;
 
 $border-color: #000;
 
+$text-muted: #a2a2a2;
 $gray-900: #292929;
 
 $font-family-base: 'PT Serif', serif;
@@ -26,7 +27,11 @@ $headings-font-weight: bold;
 $lead-font-size: $font-size-base * 1.125;
 $small-font-size: 14px;
 
+$badge-font-weight: 400;
+$badge-font-size: $small-font-size;
+
 $card-border-width: 0;
+$card-cap-bg: transparent;
 
 $navbar-padding-y: 7px;
 
@@ -48,10 +53,19 @@ $hr-border-width: 4px;
 
 .font-family-condensed {
   font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-family-roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 .letter-spacing-lg {
   letter-spacing: 0.25em;
+}
+
+.letter-spacing-sm {
+  letter-spacing: 0.05em;
 }
 
 .border-md {

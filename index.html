@@ -10,58 +10,7 @@
 </head>
 <body>
 
-<div class="sticky-top">
-    <nav class="navbar text-white bg-dark smallest">
-        <div class="container">
-            <div class="float-left text-white">
-                <i class="fa fa-cloud"></i> +6°C МОСКВА
-            </div>
-            <div class="float-right">
-                <a href="#" class="text-white ml-2">О журнале</a>
-                <a href="#" class="text-info ml-2">Написать в редакцию</a>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand d-lg-none mx-auto" href="#">
-                <img src="./public/img/logo.png" class="align-middle" alt="">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <div class="d-flex justify-content-between w-100">
-                    <ul class="navbar-nav small font-family-condensed w-100 justify-content-between">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Коронавирус</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Личные деньги</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Я предприниматель</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand px-3" href="#">
-                        <img src="./public/img/logo.png" class="align-top" alt="">
-                    </a>
-                    <ul class="navbar-nav small font-family-condensed w-100 justify-content-between">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Моё здоровье</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Уровень жизни</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Ты и закон</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
+<div class="sticky-top" id="header"></div>
 
 <div class="container pt-4">
     <div class="card mb-3">
@@ -71,7 +20,10 @@
                     <h4 class="card-subtitle font-family-condensed letter-spacing-lg font-weight-normal mb-2"><span class="border-bottom">Личные деньги</span></h4>
                     <h2 class="card-title">Бизнес оценил риски «удаленки»</h2>
                     <p class="card-text">Коронавирус заставляет компании отправить сотрудников по домам. Технически перевести на удаленную работу можно практически любого. «Ко» выяснила, сколько это стоит и какие корпоративные риски провоцирует.</p>
-                    <p class="card-text small"><span class="letter-spacing-lg">Виталий Мосеев</span><span class="text-muted ml-2">15 минут назад</span></p>
+                    <p class="card-text small font-family-condensed">
+                        <span class="letter-spacing-lg">Виталий Мосеев</span>
+                        <span class="text-muted ml-2">15 минут назад</span>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -90,7 +42,10 @@
                 <div class="card-body p-0">
                     <p class="card-subtitle font-family-condensed letter-spacing-lg lead my-2"><span class="border-bottom">Я предприниматель</span></p>
                     <h3 class="card-title">Малый бизнес не верит в поддержку государства</h3>
-                    <p class="card-text small"><span class="letter-spacing-lg">Анна Орешкина</span><span class="text-muted ml-2">4 часа назад</span></p>
+                    <p class="card-text small font-family-condensed">
+                        <span class="letter-spacing-lg">Анна Орешкина</span>
+                        <span class="text-muted ml-2">4 часа назад</span>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-5">
@@ -108,25 +63,33 @@
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,25 +101,33 @@
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Мать Собчак Нарусову госпитализировали с подозрением на коронавирус</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Помпео обвинил Китай в сокрытии информации о коронавирусе</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,51 +139,59 @@
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Рада может провести заседание на стадионе – нардеп</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">В Офисе президента заверили, что в Украине нет проблем с наличием тестов на коронавирус</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                     <div class="card bg-secondary">
                         <div class="card-body py-0">
                             <h6 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h6>
                         </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
+                        <div class="card-footer">
+                            <small class="text-muted font-family-condensed">20:10 сегодня</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3">
-            <h5>Популярное</h5>
+            <h5 class="font-family-condensed">Популярное</h5>
             <ul class="list-group list-group-flush border-top">
                 <li class="list-group-item">
                     <p class="font-family-condensed letter-spacing-lg small">Коронавирус</p>
                     <h5 class="mb-1">Элитаs самоизолировалась</h5>
-                    <small class="text-muted">15 минут назад</small>
+                    <small class="text-muted font-family-condensed">15 минут назад</small>
                 </li>
                 <li class="list-group-item">
                     <p class="font-family-condensed letter-spacing-lg small">Коронавирус</p>
                     <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted">15 минут назад</small>
+                    <small class="text-muted font-family-condensed">15 минут назад</small>
                 </li>
                 <li class="list-group-item">
                     <p class="font-family-condensed letter-spacing-lg small">Бизнес</p>
                     <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted">15 минут назад</small>
+                    <small class="text-muted font-family-condensed">15 минут назад</small>
                 </li>
                 <li class="list-group-item">
                     <p class="font-family-condensed letter-spacing-lg small">Бизнес</p>
                     <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted">15 минут назад</small>
+                    <small class="text-muted font-family-condensed">15 минут назад</small>
                 </li>
             </ul>
         </div>
@@ -253,14 +232,17 @@
     </div>
 </div>
 
-<div class="border-top bg-secondary text-center mt-4 py-1">
-    <div class="container">
-        <img src="./public/img/logo.png" class="mt-3" alt="">
-        <hr>
-        <p class="small">Полное или частное использование материалов возможно только с разрешением редакции.</p>
-        <small class="text-muted">© 2020. Все права защищены.</small>
-    </div>
-</div>
+<div id="footer"></div>
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./public/js/jquery-3.5.0.min.js"></script>
+<script src="./public/js/popper.min.js"></script>
+<script src="./public/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
 </body>
 </html>
