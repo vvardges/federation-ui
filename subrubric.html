@@ -19,14 +19,16 @@
     </nav>
     <div class="bg-light py-2">
         <div class="container font-family-condensed text-black-50">
-            <u class="h4 font-weight-normal mb-0 mr-3">Поиск по тегам</u>
-            <div class="letter-spacing-lg d-inline-block">
-                <span class="badge border border-secondary">#Москва</span>
-                <span class="badge border border-secondary">#Бизнесдома</span>
-                <span class="badge border border-secondary">#Бизнесдлявсех</span>
-                <span class="badge border border-secondary">#Деньгиневсем</span>
-                <span class="badge border border-secondary">#Москва</span>
-                <span class="badge border border-secondary">#Бизнесдома</span>
+            <div class="btn-toolbar">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Поиск по тегам" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+                <div class="btn-grou ml-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-sm letter-spacing-lg btn-outline-dark">#Москва</button>
+                    <button type="button" class="btn btn-sm letter-spacing-lg btn-dark">#Бизнесдома</button>
+                    <button type="button" class="btn btn-sm letter-spacing-lg btn-outline-dark">#Бизнесдлявсех</button>
+                    <button type="button" class="btn btn-sm letter-spacing-lg btn-outline-dark">#Деньгиневсем</button>
+                </div>
             </div>
         </div>
     </div>
@@ -136,7 +138,7 @@
             <nav class="mb-4 text-center">
                 <ul class="pagination font-family-condensed">
                     <li class="page-item disabled">
-                        <a class="page-link" href="#" aria-label="Previous">
+                        <a class="page-link rounded-circle" href="#" aria-label="Previous">
                             <i class="fa fa-arrow-left"></i>
                         </a>
                     </li>
@@ -150,7 +152,7 @@
                     <li class="page-item"><a class="page-link rounded-circle" href="#">...</a></li>
                     <li class="page-item"><a class="page-link rounded-circle" href="#">147</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
+                        <a class="page-link rounded-circle" href="#" aria-label="Next">
                             <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>

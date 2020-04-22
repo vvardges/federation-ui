@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <title>Federation</title>
+</head>
+<body>
+
+<div class="sticky-top">
+    <div id="header"></div>
+</div>
+
+<div class="pt-4 bg-dark min-vh-100">
+    <div class="text-white-50 col-lg-6 mx-auto">
+        <h1>Упссс!</h1>
+        <hr class="border-secondary">
+        <p class="lead letter-spacing-sm mb-5">Мы не можем найти страницу, которую ты ищешь</p>
+        <img src="./public/img/404.png" class="img-fluid" alt="">
+        <div class="text-right">
+            <a href="" class="text-white h4">На главную</a>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./public/js/jquery-3.5.0.min.js"></script>
+<script src="./public/js/popper.min.js"></script>
+<script src="./public/js/bootstrap.min.js"></script>
+<script src="./public/js/fontawesome.js"></script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+</body>
+</html>

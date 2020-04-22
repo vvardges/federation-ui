@@ -8,6 +8,7 @@ $theme-colors: (
   "secondary": #eaecf2,
        "info": #99A8C5,
       "black": #000,
+       "dark": #292929
 );
 
 $spacer: 1.5rem;
@@ -16,6 +17,7 @@ $border-color: #000;
 
 $text-muted: #a2a2a2;
 $gray-900: #292929;
+$gray-400: #414141;
 
 $font-family-base: 'PT Serif', serif;
 $headings-font-family: 'Roboto', sans-serif;
@@ -33,6 +35,7 @@ $badge-font-size: 14px;
 
 $card-border-width: 0;
 $card-cap-bg: transparent;
+$card-height: 100%;
 
 $navbar-padding-y: 7px;
 
@@ -54,10 +57,16 @@ $link-color: $gray-900;
 $pagination-border-width: 0;
 $pagination-active-bg: $gray-900;
 $pagination-disabled-color: $text-muted;
+$pagination-padding-y: 6px;
+$pagination-padding-x: 0;
 
 $modal-content-bg: $gray-900;
 $modal-content-border-width: 0;
 
+$input-bg: transparent;
+//$input-color: white;
+//$input-focus-border-color: white;
+$input-focus-box-shadow: none;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -86,7 +95,13 @@ $modal-content-border-width: 0;
   font-size: 10px;
 }
 
-.social-icons a{
+a.rounded-circle{
   width: 30px;
   height: 30px;
+}
+
+input {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
 }
