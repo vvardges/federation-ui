@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/css/main.css">
     <title>Federation</title>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./public/js/jquery-3.5.0.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/fontawesome.js"></script>
 </head>
 <body>
 
@@ -21,7 +26,7 @@
                 <div class="card-body p-0">
                     <h4 class="card-subtitle font-family-condensed letter-spacing-lg font-weight-normal mb-2"><span class="border-bottom">Личные деньги</span></h4>
                     <a href="./article.html"><h2 class="card-title">Бизнес оценил риски «удаленки»</h2></a>
-                    <p class="card-text">Коронавирус заставляет компании отправить сотрудников по домам. Технически перевести на удаленную работу можно практически любого. «Ко» выяснила, сколько это стоит и какие корпоративные риски провоцирует.</p>
+                    <p class="card-text letter-spacing-xs">Коронавирус заставляет компании отправить сотрудников по домам. Технически перевести на удаленную работу можно практически любого. «Ко» выяснила, сколько это стоит и какие корпоративные риски провоцирует.</p>
                     <p class="card-text small font-family-condensed">
                         <span class="letter-spacing-lg">Виталий Мосеев</span>
                         <span class="text-muted ml-2">15 минут назад</span>
@@ -173,29 +178,8 @@
             </div>
         </div>
         <div class="col-lg-3">
-            <h5 class="font-family-condensed">Популярное</h5>
-            <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item">
-                    <p class="font-family-condensed letter-spacing-lg small">Коронавирус</p>
-                    <h5 class="mb-1">Элитаs самоизолировалась</h5>
-                    <small class="text-muted font-family-condensed">15 минут назад</small>
-                </li>
-                <li class="list-group-item">
-                    <p class="font-family-condensed letter-spacing-lg small">Коронавирус</p>
-                    <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted font-family-condensed">15 минут назад</small>
-                </li>
-                <li class="list-group-item">
-                    <p class="font-family-condensed letter-spacing-lg small">Бизнес</p>
-                    <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted font-family-condensed">15 минут назад</small>
-                </li>
-                <li class="list-group-item">
-                    <p class="font-family-condensed letter-spacing-lg small">Бизнес</p>
-                    <h5 class="mb-1">Бизнес оценил деньги "удаленки"</h5>
-                    <small class="text-muted font-family-condensed">15 минут назад</small>
-                </li>
-            </ul>
+            <div id="popular"></div>
+            <script>jQuery("#popular").load("./components/popular.html");</script>
         </div>
     </div>
 
@@ -236,11 +220,6 @@
 
 <div id="footer"></div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="./public/js/jquery-3.5.0.min.js"></script>
-<script src="./public/js/popper.min.js"></script>
-<script src="./public/js/bootstrap.min.js"></script>
-<script src="./public/js/fontawesome.js"></script>
 <script>
     $(function(){
         $("#header").load("header.html");

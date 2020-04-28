@@ -3462,7 +3462,6 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: 100%;
   word-wrap: break-word;
   background-color: transparent;
   background-clip: border-box;
@@ -7340,11 +7339,20 @@ a.text-blue:hover, a.text-blue:focus {
 .letter-spacing-lg {
   letter-spacing: 0.25em; }
 
+.letter-spacing-md {
+  letter-spacing: 0.1em; }
+
 .letter-spacing-sm {
   letter-spacing: 0.05em; }
 
+.letter-spacing-xs {
+  letter-spacing: 0.03em; }
+
 .border-md {
   border-width: 3px !important; }
+
+.smaller {
+  font-size: 12px; }
 
 .smallest {
   font-size: 10px; }
@@ -7377,3 +7385,12 @@ input.text-white:focus, textarea.text-white:focus {
 
 .modal-open > .container {
   filter: blur(2px); }
+
+.btn-super {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out; }
+  .btn-super:hover {
+    color: white;
+    background-position: left bottom; }

@@ -39,7 +39,6 @@ $badge-font-size: 14px;
 
 $card-border-width: 0;
 $card-cap-bg: transparent;
-$card-height: 100%;
 $card-bg: transparent;
 
 $navbar-padding-y: 7px;
@@ -110,12 +109,24 @@ $link-hover-decoration: none;
   letter-spacing: 0.25em;
 }
 
+.letter-spacing-md {
+  letter-spacing: 0.1em;
+}
+
 .letter-spacing-sm {
   letter-spacing: 0.05em;
 }
 
+.letter-spacing-xs {
+  letter-spacing: 0.03em;
+}
+
 .border-md {
   border-width: 3px !important;
+}
+
+.smaller {
+  font-size: 12px;
 }
 
 .smallest {
@@ -156,4 +167,16 @@ input.text-white:focus, textarea.text-white:focus {
 
 .modal-open > .container {
   filter: blur(2px);
+}
+
+.btn-super {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+
+  &:hover {
+    color: white;
+    background-position: left bottom;
+  }
 }

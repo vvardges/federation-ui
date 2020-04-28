@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/css/main.css">
     <title>Federation</title>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./public/js/jquery-3.5.0.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/fontawesome.js"></script>
 </head>
 <body>
 
@@ -33,6 +38,7 @@
                         <a class="nav-link" href="./subrubric.html">Госпомощь</a>
                     </li>
                 </ul>
+                <button class="btn btn-lg btn-link text-white"><i class="fa fa-chevron-right"></i></button>
             </div>
         </div>
     </nav>
@@ -53,7 +59,7 @@
                         <span class="badge badge-secondary">#Деньгиневсем</span>
                     </div>
                     <h3 class="card-title">Малый бизнес не верит в поддержку государства</h3>
-                    <p class="card-text">
+                    <p class="card-text letter-spacing-xs">
                         Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина.
                         Однако, быстрая переориентация и окончание карантина смогут спасти малый бизнес от закрытия.
                     </p>
@@ -73,44 +79,9 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-lg-12">
-            <div class="bg-secondary border-left border-md mb-3">
-                <p class="font-family-condensed letter-spacing-lg m-0 p-3">Я предприниматель</p>
-                <div class="card-group flex-column flex-lg-row">
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="mt-4">
+        <div id="small5"></div>
+        <script>jQuery("#small5").load("./components/small-5.html");</script>
     </div>
 
     <div class="mt-4">
@@ -255,12 +226,6 @@
 </div>
 
 <div id="footer"></div>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="./public/js/jquery-3.5.0.min.js"></script>
-<script src="./public/js/popper.min.js"></script>
-<script src="./public/js/bootstrap.min.js"></script>
-<script src="./public/js/fontawesome.js"></script>
 <script>
     $(function(){
         $("#header").load("header.html");

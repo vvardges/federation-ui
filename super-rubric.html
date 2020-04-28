@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/css/main.css">
     <title>Federation</title>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./public/js/jquery-3.5.0.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/fontawesome.js"></script>
 </head>
 <body>
 
@@ -50,8 +55,8 @@
                     <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th class="text-muted font-weight-normal text-center" scope="col">в Росии</th>
-                        <th class="text-muted font-weight-normal text-center" scope="col">в мире</th>
+                        <th class="text-black-50 font-weight-normal text-center smaller" scope="col">в Росии</th>
+                        <th class="text-black-50 font-weight-normal text-center smaller" scope="col">в мире</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -71,9 +76,14 @@
                         <td class="h4 text-center text-black-50">1420</td>
                     </tr>
                     </tbody>
+                    <tfoot>
+                    <tr>
+                        <td><small class="text-black-50 font-italic smaller">последнее обновления 22/04/2020</small></td>
+                    </tr>
+                    </tfoot>
                 </table>
-                <small class="text-muted font-italic">последнее обновления 22/04/2020</small>
             </div>
+            <button class="btn btn-sm btn-secondary btn-block btn-super text-uppercase font-family-roboto smallest letter-spacing-lg">Подробнее</button>
         </div>
     </div>
     <div class="card mb-3">
@@ -90,7 +100,7 @@
                         <span class="badge badge-secondary">#Деньгиневсем</span>
                     </div>
                     <h3 class="card-title">Малый бизнес не верит в поддержку государства</h3>
-                    <p class="card-text">
+                    <p class="card-text letter-spacing-xs">
                         Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина.
                         Однако, быстрая переориентация и окончание карантина смогут спасти малый бизнес от закрытия.
                     </p>
@@ -110,44 +120,9 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-lg-12">
-            <div class="bg-secondary border-left border-md mb-3">
-                <p class="font-family-condensed letter-spacing-lg m-0 p-3">Я предприниматель</p>
-                <div class="card-group flex-column flex-lg-row">
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">Коронавирус рекордно подорвал деловую активность в Европе</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">15:30 Вчер</div>
-                    </div>
-                    <div class="card bg-secondary">
-                        <div class="card-body py-0">
-                            <h5 class="card-title mb-0">В США будут решать, возобновить ли работу предприятий в условиях коронавируса</h5>
-                        </div>
-                        <div class="card-footer bg-secondary border-0 text-muted small font-family-condensed">20:10 сегодня</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="mt-4">
+        <div id="small5"></div>
+        <script>jQuery("#small5").load("./components/small-5.html");</script>
     </div>
 
     <div class="mt-4">
@@ -162,7 +137,7 @@
                             <span class="badge badge-secondary">#Деньги</span>
                         </div>
                         <h4 class="card-title">Проблемы выплат зарплат и социальной помощи в условиях всемирной  пандемии</h4>
-                        <p class="card-text">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
+                        <p class="card-text letter-spacing-xs">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
                     </div>
                     <div class="card-footer p-0">
                         <small class="font-family-condensed">
@@ -182,7 +157,7 @@
                             <span class="badge badge-secondary">#Коронавирус</span>
                         </div>
                         <h4 class="card-title">Медработники масово увольняються с больниц и поликлиник</h4>
-                        <p class="card-text">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
+                        <p class="card-text letter-spacing-xs">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
                     </div>
                     <div class="card-footer p-0">
                         <small class="font-family-condensed">
@@ -201,7 +176,7 @@
                             <span class="badge badge-secondary">#Россия</span>
                         </div>
                         <h4 class="card-title">Будет ли чрезвычайная ситуация в России?</h4>
-                        <p class="card-text">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
+                        <p class="card-text letter-spacing-xs">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
                     </div>
                     <div class="card-footer p-0">
                         <small class="font-family-condensed">
@@ -221,7 +196,7 @@
                             <span class="badge badge-secondary">#Деньги</span>
                         </div>
                         <h4 class="card-title">Проблемы выплат зарплат и социальной помощи в условиях всемирной  пандемии</h4>
-                        <p class="card-text">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
+                        <p class="card-text letter-spacing-xs">Малый бизнес базируется на коммуникации и контактах, поэтому не все сектора бизнеса могут работать в условиях карантина. Однако, быстрая переориентация. </p>
                     </div>
                     <div class="card-footer p-0">
                         <small class="font-family-condensed">
@@ -294,11 +269,6 @@
 
 <div id="footer"></div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="./public/js/jquery-3.5.0.min.js"></script>
-<script src="./public/js/popper.min.js"></script>
-<script src="./public/js/bootstrap.min.js"></script>
-<script src="./public/js/fontawesome.js"></script>
 <script>
     $(function(){
         $("#header").load("header.html");
