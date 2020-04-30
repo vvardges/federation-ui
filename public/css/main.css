@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("../icons/icons.css");
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -1568,7 +1569,7 @@ select.form-control:focus::-ms-value {
   line-height: 1.5; }
 
 .form-control-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: 40px;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   line-height: 1.5; }
@@ -2789,7 +2790,7 @@ input[type="button"].btn-block {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.5em + 1rem + 2px); }
+  height: 40px; }
 
 .input-group-lg > .form-control,
 .input-group-lg > .custom-select,
@@ -2977,7 +2978,7 @@ input[type="button"].btn-block {
   font-size: 0.875rem; }
 
 .custom-select-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: 40px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -3814,7 +3815,7 @@ input[type="button"].btn-block {
   font-weight: 700; }
 
 .alert-dismissible {
-  padding-right: 4rem; }
+  padding-right: 3.5rem; }
   .alert-dismissible .close {
     position: absolute;
     top: 0;
@@ -4196,15 +4197,12 @@ input[type="button"].btn-block {
 
 .close {
   float: right;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
   text-shadow: none;
   opacity: .5; }
-  @media (max-width: 1200px) {
-    .close {
-      font-size: calc(1.275rem + 0.3vw) ; } }
   .close:hover {
     color: #000;
     text-decoration: none; }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('../icons/icons.css');
 
 $enable-rounded: false;
 $enable-responsive-font-sizes: true;
@@ -77,7 +78,7 @@ $modal-header-padding-x: 1rem !default;
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x 0 $modal-header-padding-x;
 
 $close-text-shadow: none;
-
+$close-font-size: 1rem;
 $display-line-height: 0.8;
 
 $input-bg: transparent;
@@ -85,6 +86,7 @@ $input-color: black;
 $input-focus-border-color: black;
 $input-focus-box-shadow: transparent;
 $input-font-size-lg: 24px;
+$input-height-lg: 40px;
 
 $btn-font-size-lg: 24px;
 
