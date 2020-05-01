@@ -343,7 +343,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.125rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .display-1 {
   font-size: 6rem;
@@ -1584,7 +1584,7 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
 
 .form-text {
   display: block;
@@ -4354,14 +4354,14 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem; }
+  padding: 2rem; }
 
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 1.75rem;
   border-top: 0 solid #000; }
   .modal-footer > * {
     margin: 0.25rem; }
@@ -4375,7 +4375,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 600px;
+    max-width: 630px;
     margin: 150px auto; }
   .modal-dialog-scrollable {
     max-height: calc(100% - 300px); }
