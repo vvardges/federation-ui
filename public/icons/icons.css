@@ -64,3 +64,6 @@
 .icon-close:before {
   content: "\e906";
 }
+.icon-navbar-toggler:before {
+  content: "\e90d";
+}

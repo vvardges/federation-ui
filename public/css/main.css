@@ -3250,11 +3250,14 @@ input[type="button"].btn-block {
   align-items: center; }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  padding: 0 0;
+  font-size: 2.125rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent; }
+  @media (max-width: 1200px) {
+    .navbar-toggler {
+      font-size: calc(1.3375rem + 1.05vw) ; } }
   .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
 
@@ -7348,6 +7351,10 @@ a.text-blue:hover, a.text-blue:focus {
 
 .border-md {
   border-width: 3px !important; }
+
+.border-light-gray {
+  border-width: 1px;
+  border-color: #DEE0E3 !important; }
 
 .smaller {
   font-size: 12px; }

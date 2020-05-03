@@ -44,13 +44,17 @@ $card-cap-bg: transparent;
 $card-bg: transparent;
 
 $navbar-padding-y: 7px;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-font-size: 34px;
+$navbar-toggler-border-radius: 0;
 
 $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
         xl: 1268px
-) !default;
+);
 
 $list-group-item-padding-x: 0;
 $list-group-border-color: rgba(41, 41, 41, 0.36);
@@ -128,6 +132,11 @@ $link-hover-decoration: none;
 
 .border-md {
   border-width: 3px !important;
+}
+
+.border-light-gray {
+  border-width: 1px;
+  border-color: #DEE0E3 !important;
 }
 
 .smaller {
